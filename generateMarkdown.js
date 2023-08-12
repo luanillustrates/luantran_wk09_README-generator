@@ -35,12 +35,38 @@ function generateMarkdown(answers) {
   return `
   ${renderLicenseBadge(answers.license)}
   # ${answers.title}
-  ## Project description
-  ${answers.description}
+
   ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribute](#contribute)
+  * [Tests](#tests)
+  * [Ask Me](#ask-me)
+
+  ## Description
+  ${answers.description}
+
+  ## Installation
+  ${answers.installation}
+
+  ## Usage
+  ${answers.usage}
+
   ## License
   ${answers.license}
   License details can be found ${renderLicenseLink(answers.license)}
+
+  ## Contribute
+  ${answers.usage}
+
+  ## Tests
+  ${answers.test}
+
+  ## Ask Me
+  ${answers.github}
+  ${answers.email}
 `;
 }
 

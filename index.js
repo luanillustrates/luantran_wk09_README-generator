@@ -28,6 +28,12 @@ const questionPrompt = () => {
         },
         {
             type: 'input',
+            name: 'license',
+            choices: ['MIT', 'Mozilla public license 2.0', 'The Unlicense'],
+            message: 'select a license',
+        },
+        {
+            type: 'input',
             name: 'contribute',
             message: 'list any contribution methods here',
         },
@@ -35,12 +41,6 @@ const questionPrompt = () => {
             type: 'input',
             name: 'test',
             message: 'enter test instructions',
-        },
-        {
-            type: 'input',
-            name: 'license',
-            choices: ['MIT', 'Mozilla public license 2.0', 'The Unlicense'],
-            message: 'select a license',
         },
         {
             type: 'input',
