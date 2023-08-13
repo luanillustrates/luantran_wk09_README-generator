@@ -32,6 +32,12 @@ const questionPrompt = () => {
             choices: ['MIT', 'Mozilla public license 2.0', 'The Unlicense', 'no license'],
             message: 'select a license',
         },
+        
+        {
+            type: 'input',
+            name: 'credit',
+            message: 'list any credits here',
+        },
         {
             type: 'input',
             name: 'contribute',
