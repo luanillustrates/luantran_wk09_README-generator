@@ -27,9 +27,9 @@ const questionPrompt = () => {
             message: 'describe the usage of the project',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
-            choices: ['MIT', 'Mozilla public license 2.0', 'The Unlicense'],
+            choices: ['MIT', 'Mozilla public license 2.0', 'The Unlicense', 'no license'],
             message: 'select a license',
         },
         {
@@ -55,14 +55,9 @@ const questionPrompt = () => {
     ])
 }
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data)
-// }
-
 const init = () => {
-    promptUser()
-        .then((answers) => writeFile('README.md', generateMarkdown(answers)))
+    questionPrompt()
+        .then((answers) => writeFile('./output/README.md', generateMarkdown(answers)))
         .then(() => console.log('successfully wrote to README.md'))
         .catch((err) => console.error(err));
 };
