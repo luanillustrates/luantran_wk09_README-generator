@@ -28,7 +28,7 @@
   Credit to the original repo at https://github.com/coding-boot-camp/potential-enigma
 
   ## Contribute
-  To run the script, run the 'node index.js' command in the integrated terminal and answer the prompts.
+  No contributions required.
 
   ## Tests
   No tests required.
